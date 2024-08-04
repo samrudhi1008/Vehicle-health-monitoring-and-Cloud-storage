@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Driver Profile</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/adminProfile.css" />
+  </head>
+  <body>
+    <div class="d-flex" id="wrapper">
+      <div id="sidebar-wrapper">
+        <div
+          class="sidebar-heading text-center text-white py-3 primary-text fs-4 fw-bold text-uppercase border-bottom"
+        >
+          AutoHealthTracker
+        </div>
+        <div class="list-group list-group-flush my-3">
+          <a
+            href="./driver_dashboard.html"
+            class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
+            ><i class="fas fa-tachometer-alt"></i> Dashboard</a
+          >
+ 
+          <a
+            href="#profile"
+            class="list-group-item list-group-item-action bg-transparent second-text fw-bold active"
+            ><i class="fas fa-user-circle"></i> Profile</a
+          >
+          <a
+            href="./driver-settings.html"
+            class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
+            ><i class="fas fa-cog"></i> Settings</a
+          >
+          <a
+            href="./login.html"
+            class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"
+            ><i class="fas fa-sign-out-alt"></i> Sign Out</a
+          >
+        </div>
+      </div>
+ 
+      <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand-lg fw-bold border-bottom">
+          <button class="btn btn-primary" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="navbar-center">
+            <img
+              src="./assets/Logo.png"
+              alt="Company Icon"
+              class="company-icon mr-2"
+            />
+            <span class="navbar-brand mb-0 h1">Auto Health Tracker</span>
+          </div>
+          <div class="ml-auto d-flex align-items-center">
+            <span class="mr-2">User</span>
+            <img
+              src="./assets/adminProfilePic.jpg"
+              alt="User Photo"
+              class="user-photo"
+            />
+          </div>
+        </nav>
+        <div class="container-fluid">
+          <h1 class="mt-4">Driver Profile</h1>
+          <div class="profile-container">
+            <div class="profile-item">
+              <h3>Driver Name</h3>
+              <p>Jignesh Modi</p>
+            </div>
+            <div class="profile-item">
+              <h3>Email</h3>
+              <p>driver@example.com</p>
+            </div>
+            <div class="profile-item">
+              <h3>Mobile number</h3>
+              <p>364645475</p>
+            </div>
+            <div class="profile-item">
+              <h3>Age</h3>
+              <p>21</p>
+            </div>
+            <div class="profile-item">
+              <h3>Licence No</h3>
+              <p>LH 32323</p>
+            </div>
+            <div class="profile-item">
+              <h3>Address</h3>
+              <p>Dange chowk,nimbalgarnagar,tathwade,pune-33</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+  </body>
+</html>

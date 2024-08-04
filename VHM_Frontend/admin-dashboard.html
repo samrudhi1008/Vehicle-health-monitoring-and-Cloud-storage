@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/admin_dashboard.css">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <div id="sidebar-wrapper">
+            <div class="sidebar-heading text-center text-white py-3 primary-text fs-4 fw-bold text-uppercase border-bottom">AutoHealthTracker</div>
+            <div class="list-group list-group-flush my-3">
+                <a href="#dashboard" class="list-group-item list-group-item-action bg-transparent second-text fw-bold active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                <a href="./driver-list.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="fas fa-users"></i> Drivers</a>
+                <a href="./adminProfile.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="fas fa-user-circle"></i> Profile</a>
+                <a href="./admin-settings.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="fas fa-cog"></i> Settings</a>
+                <a href="./login.html" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+            </div>
+        </div>
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg fw-bold border-bottom">
+                <button class="btn btn-primary" id="menu-toggle"><i class="fas fa-bars"></i></button>
+                <div class="navbar-center">
+                    <img src="./assets/Logo.png" alt="Company Icon" class="company-icon mr-2">
+                    <span class="navbar-brand mb-0 h1">Auto Health Tracker</span>
+                </div>
+                <div class="ml-auto d-flex align-items-center">
+                    <span class="mr-2">Admin</span>
+                    <img src="./assets/adminProfilePic.jpg" alt="User Photo" class="user-photo">
+                </div>
+            </nav>
+            <section class="content">
+                <h1>Admin Dashboard</h1>
+                <!-- <button class="add-vehicle-btn" onclick="showAddVehicleModal()">Add Vehicle</button> -->
+                <!-- <div class="vehicle-cards" id="vehicle-cards">
+
+                </div> -->
+ <div class="card-container">
+        <div class="card">
+            <img src="./assets/car.jfif" alt="Car" class="card-image">
+            <div class="card-content">
+                <h2>Car</h2>
+                <div class="btn-container">
+                    <a href="./car-list.html">
+                     <button class="primary-btn">view list</button></a>
+               </div>
+             </div>
+        </div>
+ 
+        <div class="card">
+            <img src="./assets/bike.webp" alt="Bike" class="card-image">
+            <div class="card-content">
+                <h2>Bike</h2>
+                <div class="btn-container">
+                     <a href="./bike-list.html">
+                      <button class="primary-btn">view list</button></a>
+                </div>
+              </div>
+        </div>
+ 
+        <div class="card">
+            <img src="./assets/truck.jfif" alt="Truck" class="card-image">
+            <div class="card-content">
+                <h2>Truck</h2>
+                <div class="btn-container">
+                  <a href="./truck-list.html">
+                    <button class="primary-btn">view list</button></a>
+                </div>
+            </div>
+        </div>
+ 
+            </section>        
+        </div>
+    </div>
+
+    <!-- <div id="addVehicleModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAddVehicleModal()">&times;</span>
+            <h2>Add Vehicle</h2>
+            <form id="addVehicleForm">
+                <label for="vehicleNo">Vehicle No:</label>
+                <input type="text" id="vehicleNo" name="vehicleNo" required>
+                
+                <label for="driverName">Assigned Driver ID:</label>
+                <input type="text" id="driverName" name="driverName" required>
+                
+                <label for="vehicleImage">Vehicle Image:</label>
+                <input type="file" id="vehicleImage" name="vehicleImage" required>
+                
+                <button type="button" onclick="addVehicle()">Add Vehicle</button>
+            </form>
+        </div>
+    </div> -->
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="./js/admin-dashboard-script.js"></script> -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+</html>

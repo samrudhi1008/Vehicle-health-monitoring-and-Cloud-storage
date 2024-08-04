@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ebefff;
+    color: #333;
+  }
+ 
+  #wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+ 
+  #sidebar-wrapper {
+    min-height: 100vh;
+    width: 250px;
+    margin-left: -250px;
+    transition: margin 0.25s ease-out;
+    background-color: #800080;
+  }
+ 
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+ 
+  #page-content-wrapper {
+    width: 100%;
+  }
+ 
+  .sidebar-heading {
+    font-size: 1.2rem;
+    background: #800080;
+    padding: 0.75rem 1rem;
+    text-align: center;
+  }
+ 
+  .list-group-item {
+    border: none;
+    color: white;
+  }
+ 
+  .list-group-item.active {
+    background-color: #800080;
+    color: rgb(1, 244, 232);
+  }
+ 
+  .list-group-item:hover {
+    color: rgb(1, 244, 232);
+  }
+ 
+  .navbar .btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+  }
+ 
+  .navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+  }
+ 
+  .company-icon {
+    width: 30px;
+    height: 30px;
+  }
+ 
+  .user-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+ 
+  .container-fluid {
+    padding: 20px;
+  }
+ 
+  .vehicle-info,
+  .sensors-info {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+ 
+  .vehicle-info:hover,
+  .sensors-info:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+ 
+  .vehicle-info h2,
+  .sensors-info h2 {
+    text-align: center;
+    color: #4b0082;
+    margin: 0 0 20px 0;
+    font-size: 2rem;
+  }
+ 
+  .profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+ 
+  .profile-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(50% - 20px);
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+ 
+  .profile-item h3 {
+    margin-top: 0;
+    color: #800080;
+  }
+ 
+  .profile-item .sensor-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4b0082;
+  }

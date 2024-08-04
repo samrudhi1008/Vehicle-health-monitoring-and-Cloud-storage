@@ -1,0 +1,95 @@
+body {
+    background: #ebefff;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   
+  #addVehicleForm {
+    margin-bottom: 20px;
+  }
+   
+  .container {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 20px;
+    width: 90%;
+  }
+   
+  .btn-primary {
+    background-color: #800080;
+    border-color: #800080;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+   
+  .btn-primary:hover {
+    background-color: #4e0fa3;
+    transform: scale(1.05);
+  }
+   
+  .table {
+    color: black;
+    background-color: #ebefff;
+  }
+   
+  .table thead {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+   
+  .table-hover tbody tr:hover {
+    background-color: rgba(255, 251, 251, 0.3);
+  }
+   
+  .badge {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+   
+  .badge-success {
+    background-color: #28a745;
+  }
+   
+  .badge-danger {
+    background-color: #dc3545;
+  }
+   
+  .badge-warning {
+    background-color: #ffc107;
+  }
+   
+  .input-group {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+   
+  .input-group .form-control {
+    border-radius: 50px 0 0 50px;
+  }
+   
+  .input-group .input-group-append .input-group-text {
+    border-radius: 0 50px 50px 0;
+    color: #fff;
+  }
+   
+  .input-group .input-group-append .input-group-text:hover {
+    background-color: #4e0fa3;
+  }
+   
+  img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+  }
+   
+  .display-4 {
+    margin-right: 80px;
+  }
